@@ -1,0 +1,15 @@
+{
+  "experiment_id": "exp002",
+  "instance": "F-n45-k4",
+  "optimal_cost": 724.0,
+  "solution_cost": 725,
+  "gap_percentage": 0.13812154696132595,
+  "solve_time_seconds": 29.999924898147583,
+  "num_routes": 4,
+  "solver_settings": {
+    "first_solution_strategy": "FIRST_SOLUTION_CHEAPEST_ARC",
+    "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH",
+    "time_limit_seconds": 30,
+    "solution_limit": 100
+  }
+}

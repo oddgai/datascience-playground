@@ -1,0 +1,15 @@
+{
+  "experiment_id": "exp001",
+  "instance": "Tai75a",
+  "optimal_cost": 1618.36,
+  "solution_cost": 1615,
+  "gap_percentage": -0.20761758817567788,
+  "solve_time_seconds": 60.00019288063049,
+  "num_routes": 10,
+  "solver_settings": {
+    "first_solution_strategy": "PATH_CHEAPEST_ARC",
+    "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH",
+    "time_limit_seconds": 60,
+    "solution_limit": 100
+  }
+}

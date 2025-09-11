@@ -1,0 +1,45 @@
+{
+  "experiment_id": "f-n135-k7_exp001",
+  "model_type": "OR-tools VRP Solver",
+  "model_params": {
+    "first_solution_strategy": "PATH_CHEAPEST_ARC",
+    "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH",
+    "time_limit_seconds": 60,
+    "solution_limit": 100
+  },
+  "features": [
+    "Decimal.quantize(ROUND_HALF_UP)",
+    "EUC_2D_distance",
+    "capacity_constraint",
+    "depot_constraint"
+  ],
+  "instance_info": {
+    "name": "F-n135-k7",
+    "dimension": 135,
+    "num_vehicles": 7,
+    "capacity": 2210
+  },
+  "gap_percentage": 7.228915662650602,
+  "solve_time_seconds": 60.000332832336426,
+  "optimal_cost": 1162.0,
+  "solution_cost": 1246,
+  "num_routes": 7,
+  "preprocessing": {
+    "distance_calculation": "Decimal.quantize(ROUND_HALF_UP)",
+    "index_correction": "sol_index + 1 = vrp_index",
+    "rounding_method": "TSPLIB_standard_nint_equivalent"
+  },
+  "route_details": {
+    "all_customers_visited": true,
+    "capacity_constraints_satisfied": true,
+    "depot_return_satisfied": true
+  },
+  "scalability_analysis": {
+    "vs_f_n45_k4": {
+      "node_scaling_factor": 3.0,
+      "cost_scaling_factor": 1.61,
+      "performance_degradation": "7.23% gap vs 0% gap"
+    },
+    "complexity_assessment": "medium_scale_instance"
+  }
+}

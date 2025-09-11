@@ -1,0 +1,37 @@
+{
+  "experiment_id": "tai75a_exp001",
+  "model_type": "OR-tools VRP Solver",
+  "model_params": {
+    "first_solution_strategy": "PATH_CHEAPEST_ARC",
+    "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH",
+    "time_limit_seconds": 60,
+    "solution_limit": 100
+  },
+  "features": [
+    "Decimal.quantize(ROUND_HALF_UP)",
+    "EUC_2D_distance",
+    "capacity_constraint",
+    "depot_constraint"
+  ],
+  "instance_info": {
+    "name": "Tai75a",
+    "dimension": 76,
+    "num_vehicles": 10,
+    "capacity": 1445
+  },
+  "gap_percentage": -0.20761758817567788,
+  "solve_time_seconds": 60.00019288063049,
+  "optimal_cost": 1618.36,
+  "solution_cost": 1615,
+  "num_routes": 10,
+  "preprocessing": {
+    "distance_calculation": "Decimal.quantize(ROUND_HALF_UP)",
+    "index_correction": "sol_index + 1 = vrp_index",
+    "rounding_method": "TSPLIB_standard_nint_equivalent"
+  },
+  "route_details": {
+    "all_customers_visited": true,
+    "capacity_constraints_satisfied": true,
+    "depot_return_satisfied": true
+  }
+}

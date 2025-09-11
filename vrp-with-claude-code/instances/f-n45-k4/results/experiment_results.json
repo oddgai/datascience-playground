@@ -1,0 +1,47 @@
+{
+  "experiment_id": "f-n45-k4_exp003",
+  "model_type": "OR-tools VRP Solver",
+  "model_params": {
+    "first_solution_strategy": "PATH_CHEAPEST_ARC",
+    "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH",
+    "time_limit_seconds": 30,
+    "solution_limit": 100
+  },
+  "features": [
+    "Decimal.quantize(ROUND_HALF_UP)",
+    "EUC_2D_distance",
+    "capacity_constraint",
+    "depot_constraint"
+  ],
+  "instance_info": {
+    "name": "F-n45-k4",
+    "dimension": 45,
+    "num_vehicles": 4,
+    "capacity": 2010
+  },
+  "gap_percentage": 0.0,
+  "solve_time_seconds": 30.001036167144775,
+  "optimal_cost": 724.0,
+  "solution_cost": 724,
+  "num_routes": 4,
+  "preprocessing": {
+    "distance_calculation": "Decimal.quantize(ROUND_HALF_UP)",
+    "index_correction": "sol_index + 1 = vrp_index",
+    "rounding_method": "TSPLIB_standard_nint_equivalent"
+  },
+  "route_details": {
+    "all_customers_visited": true,
+    "capacity_constraints_satisfied": true,
+    "depot_return_satisfied": true
+  },
+  "benchmark_comparison": {
+    "vs_int_method": {
+      "int_result": 712,
+      "improvement": 12
+    },
+    "vs_round_method": {
+      "round_result": 725,
+      "improvement": 1
+    }
+  }
+}
