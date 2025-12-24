@@ -1,0 +1,17 @@
+[project]
+name = "02-fclp-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jijmodeling>=1.14.1",
+    "marimo>=0.18.1",
+    "matplotlib>=3.10.7",
+    "ommx-highs-adapter>=2.3.0",
+    "ommx-pyscipopt-adapter>=2.3.0",
+    "rustworkx>=0.17.1",
+]
+
+[tool.jupyter-databricks-kernel]
+cluster_id = "1010-034429-dh456yg5"
